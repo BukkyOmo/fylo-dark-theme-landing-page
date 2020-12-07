@@ -1,0 +1,272 @@
+body{
+    background-color: hsl(218, 28%, 13%);
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.logo{
+    width: 120px;
+    padding: 10px 0px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.nav-links{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+li{
+    list-style-type: none;
+    padding-left: 8px;
+}
+
+.intro-banner{
+    margin: 30px;
+    text-align: center;
+}
+
+.intro-banner div h1{
+    line-height: 40px;
+}
+
+button{
+    width: 100%;
+    border-radius: 30px;
+    padding: 18px;
+    color: #FFF;
+    background-color: hsl(198, 60%, 50%);
+    border: 1px solid hsl(198, 60%, 50%);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.banner-btn{
+    margin-top: 40px;
+}
+
+.description{
+    margin: 100px 30px;
+    text-align: center;
+}
+
+.description > div {
+    margin-bottom: 70px;
+}
+
+.productive-banner{
+    margin: 10px;
+    text-align: center;
+}
+
+.productive-banner > div{
+    text-align: left;
+    margin: 15px;
+}
+
+.fylo-link{
+    width: 170px;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding: 3px 0px;
+    display: flex;
+}
+
+.fylo-link > a {
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+}
+
+.fylo-link-img{
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3.5px;
+}
+
+.testimonial-cards{
+    margin-bottom: 35px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 5px;
+    padding: 10px 30px 25px;
+    line-height: 25px;
+}
+
+.card-author{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-img{
+    width: 40px;
+    margin-right: 15px;
+}
+
+.card-author-bio > p{
+    margin: 0;
+}
+
+.card-author-bio > span{
+    font-size: 11px;
+}
+
+.card-img > img {
+    border-radius: 50%;
+}
+
+.cards-banner{
+    margin: 180px 40px;
+}
+
+.access-card{
+    margin: 30px;
+    padding: 35px 25px;
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+}
+
+.CTA {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.CTA > input{
+    border-radius: 30px;
+    padding: 15px;
+    color: grey;
+    border: 1px solid #FFF;
+}
+
+.footer{
+    padding: 200px 30px 50px;
+    background-color: hsl(216, 53%, 9%);
+    display: grid;
+    grid-gap: 50px;
+}
+
+.location-details{
+   display: flex; 
+}
+
+.contact-items{
+    display: flex;
+}
+
+.contact-items > p {
+    margin: 0px 0px 10px 10px;
+}
+
+.footer-links-list{
+    margin-top: 50px;
+}
+
+.social-media-links{
+    text-align: center;
+    margin-top: 90px;
+}
+
+.social-media-links >span{
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    margin-left: 7px;
+}
+
+.social-media-icon{
+    color: #FFF;
+}
+
+.icon{
+    width: 10%;
+}
+
+@media screen and (min-width: 1020px) {
+    .header{
+        margin: 40px;
+    }
+    .intro-banner-text{
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .description{
+        display: grid;
+        margin: 100px 160px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 100px;
+    }
+
+    .productive-banner{
+        display: flex;
+        margin: auto 250px;
+    }
+
+    .cards-banner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .testimonial-cards{
+        margin: 0px 20px;
+    }
+
+    .access-card{
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .CTA{
+        display: flex;
+        justify-content: center;
+    }
+
+    .CTA > input {
+        width: 100%;
+    }
+
+    button{
+        max-width: 250px;
+    }
+
+    .footer-details{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-details > div {
+        max-width: 350px;
+    }
+
+    .footer-links-list{
+        margin-top: unset;
+    }
+
+    .footer-links-list p {
+        margin-top: unset;
+    }
+
+    .social-media-links{
+        margin: unset;
+    }
+  }
