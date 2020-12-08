@@ -1,60 +1,67 @@
-body{
+* {
+    margin: 0;
+}
+
+body {
     background-color: hsl(218, 28%, 13%);
     color: #FFF;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 25px;
+    font-size: 14px;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    line-height: 35px;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     padding: 20px 15px;
 }
 
-.logo{
+.logo {
     width: 120px;
     padding: 10px 0px;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.nav-links{
+.nav-links {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    margin: 14px 10px;
 }
 
-ul{
+ul {
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
 }
 
-li{
+li {
     list-style-type: none;
     padding-left: 8px;
 }
 
-.intro-banner{
+.intro-banner {
     margin: 30px;
     text-align: center;
 }
 
-.intro-banner div h1{
+.intro-banner div h1 {
     line-height: 40px;
 }
 
-button{
+button {
     width: 100%;
     border-radius: 30px;
-    padding: 18px;
+    padding: 15px;
     color: #FFF;
     background-color: hsl(198, 60%, 50%);
     border: 1px solid hsl(198, 60%, 50%);
@@ -62,11 +69,11 @@ button{
     font-weight: 400;
 }
 
-.banner-btn{
+.banner-btn {
     margin-top: 40px;
 }
 
-.description{
+.description {
     margin: 100px 30px;
     text-align: center;
 }
@@ -75,17 +82,25 @@ button{
     margin-bottom: 70px;
 }
 
-.productive-banner{
+.productive-banner {
     margin: 10px;
     text-align: center;
 }
 
-.productive-banner > div{
+.productive-banner > div {
     text-align: left;
     margin: 15px;
 }
 
-.fylo-link{
+.productive-banner-text > p {
+    margin-top: 20px;
+}
+
+ .access-card > p {
+     margin: 20px 0px;
+ }
+
+.fylo-link {
     width: 170px;
     border-bottom: 1px solid hsl(176, 68%, 64%);
     padding: 3px 0px;
@@ -97,13 +112,13 @@ button{
     color: hsl(176, 68%, 64%);
 }
 
-.fylo-link-img{
+.fylo-link-img {
     width: 20px;
     padding-top: 3px;
     padding-left: 3.5px;
 }
 
-.testimonial-cards{
+.testimonial-cards {
     margin-bottom: 35px;
     background-color: hsl(219, 30%, 18%);
     border-radius: 5px;
@@ -111,21 +126,21 @@ button{
     line-height: 25px;
 }
 
-.card-author{
+.card-author {
     display: flex;
     justify-content: flex-start;
 }
 
-.card-img{
+.card-img {
     width: 40px;
     margin-right: 15px;
 }
 
-.card-author-bio > p{
+.card-author-bio > p {
     margin: 0;
 }
 
-.card-author-bio > span{
+.card-author-bio > span {
     font-size: 11px;
 }
 
@@ -133,15 +148,17 @@ button{
     border-radius: 50%;
 }
 
-.cards-banner{
-    margin: 180px 40px;
+.cards-banner {
+    margin: 120px 40px 50px 40px;
 }
 
-.access-card{
+.access-card {
     margin: 30px;
     padding: 35px 25px;
     text-align: center;
     background-color: hsl(217, 28%, 15%);
+    position: relative;
+    top: 200px;
 }
 
 .CTA {
@@ -149,25 +166,32 @@ button{
     grid-gap: 30px;
 }
 
-.CTA > input{
+.CTA > input {
     border-radius: 30px;
     padding: 15px;
     color: grey;
     border: 1px solid #FFF;
 }
 
-.footer{
+.bg-quotes {
+    position: relative;
+    top: 20px;
+    left: 5px;
+    z-index: -1;
+}
+
+.footer {
     padding: 200px 30px 50px;
     background-color: hsl(216, 53%, 9%);
     display: grid;
     grid-gap: 50px;
 }
 
-.location-details{
+.location-details {
    display: flex; 
 }
 
-.contact-items{
+.contact-items {
     display: flex;
 }
 
@@ -175,68 +199,89 @@ button{
     margin: 0px 0px 10px 10px;
 }
 
-.footer-links-list{
+.footer-links-list {
     margin-top: 50px;
 }
 
-.social-media-links{
+.social-media-links {
     text-align: center;
     margin-top: 90px;
 }
 
-.social-media-links >span{
+.social-media-links >span {
     border: 1px solid #FFF;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 24px;
+    height: 24px;
     padding: 5px;
     margin-left: 7px;
 }
 
-.social-media-icon{
+.social-media-icon {
     color: #FFF;
 }
 
-.icon{
+.icon {
     width: 10%;
 }
 
 @media screen and (min-width: 1020px) {
-    .header{
-        margin: 40px;
+    .header {
+        margin: 5px 20px;
     }
-    .intro-banner-text{
+
+    li {
+        padding-left: 40px;
+    }
+
+    .intro-banner-text {
         max-width: 600px;
         margin: auto;
     }
 
-    .description{
+    .description {
         display: grid;
         margin: 100px 160px;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 100px;
     }
 
-    .productive-banner{
+    .productive-banner {
         display: flex;
-        margin: auto 250px;
+        margin: auto 50px;
     }
 
-    .cards-banner{
+    .productive-banner > div {
+        padding-left: 50px;
+    }
+
+    .productive-banner-text {
+        padding: 100px 50px 40px 10px;
+    }
+
+    .bg-quotes {
+        width: 10%;
+        top: -25px;
+        left: 55px;
+    }
+
+    .cards-banner {
         display: flex;
         justify-content: space-between;
+        margin: 120px 80px 50px 80px;
     }
 
-    .testimonial-cards{
+    .testimonial-cards {
         margin: 0px 20px;
     }
 
-    .access-card{
+    .access-card {
         max-width: 700px;
         margin: auto;
+        top: 100px;
     }
 
-    .CTA{
+    .CTA {
         display: flex;
         justify-content: center;
     }
@@ -245,11 +290,11 @@ button{
         width: 100%;
     }
 
-    button{
+    button {
         max-width: 250px;
     }
 
-    .footer-details{
+    .footer-details {
         display: flex;
         justify-content: space-between;
     }
@@ -258,7 +303,7 @@ button{
         max-width: 350px;
     }
 
-    .footer-links-list{
+    .footer-links-list {
         margin-top: unset;
     }
 
@@ -266,7 +311,15 @@ button{
         margin-top: unset;
     }
 
-    .social-media-links{
+    .social-media-links {
         margin: unset;
+    }
+
+    .productive-img-div {
+        width: 60%;
+    }
+
+    .footer {
+        padding: 150PX 100px 50px;
     }
   }
